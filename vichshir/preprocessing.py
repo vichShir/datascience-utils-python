@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 from sklearn import preprocessing
 
 def normalize(dataframe:pd.DataFrame, columns:list=None, by_dtype:list=None, inplace:bool=False):
