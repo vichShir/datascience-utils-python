@@ -12,7 +12,8 @@ dependencies = [
     "numpy",
     "sklearn",
     "transformers",
-    "beautifulsoup4"
+    "beautifulsoup4",
+    "urllib"
 ]
 
 [project.optional-dependencies]
