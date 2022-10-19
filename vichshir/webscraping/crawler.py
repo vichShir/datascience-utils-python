@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 from bs4.element import Comment
 from urllib.request import Request, urlopen
 import urllib.request
+import re
 
 
 def tag_visible(element):
