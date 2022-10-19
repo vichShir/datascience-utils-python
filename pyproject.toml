@@ -13,7 +13,7 @@ dependencies = [
     "sklearn",
     "transformers",
     "beautifulsoup4",
-    "urllib"
+    "urllib3"
 ]
 
 [project.optional-dependencies]
