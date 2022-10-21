@@ -26,13 +26,13 @@ def text_from_html(body):
 
 
 def scrap(url):
-  #try:
-  url = website_link_valid(url)
-  req = Request(
-      url=url, 
-      headers={'User-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A'}
-  )
-  html = urlopen(req).read()
-  return text_from_html(html)
-  #except:
-  #  return None
+  try:
+    url = website_link_valid(url)
+    req = Request(
+        url=url, 
+        headers={'User-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A'}
+    )
+    html = urlopen(req).read()
+    return text_from_html(html)
+  except:
+    return None
