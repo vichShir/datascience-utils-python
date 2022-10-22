@@ -32,7 +32,7 @@ def scrap(url):
         url=url, 
         headers={'User-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A'}
     )
-    html = urlopen(req).read()
+    html = urlopen(req, timeout=4).read()
     return text_from_html(html)
   except:
     return None
