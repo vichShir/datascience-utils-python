@@ -25,14 +25,14 @@ def text_from_html(body):
   return re.sub(r'\W+', ' ', txt)
 
 
-def scrap(url):
+def scrap(url, timeout=4):
   try:
     url = website_link_valid(url)
     req = Request(
         url=url, 
         headers={'User-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A'}
     )
-    html = urlopen(req, timeout=4).read()
+    html = urlopen(req, timeout=timeout).read()
     return text_from_html(html)
   except:
     return None
