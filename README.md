@@ -1,12 +1,31 @@
 # vichShir package
-Utils package with commonly functions used for data science projects with Python
+This repository contains common functions that I used in data science projects with Python.
+
+
+
+## Key Features
+- Utils
+  - Download files
+- Machine Learning - Preprocessing
+  - Normalize the inputs
+  - Impute missing data
+- Text patterns
+  - Name extractor
+  - Email
+  - Phone
+  - Year
+- Webscraping
+  - Extract the content (text) from websites
 
 
 
 ## How to use
-
+To clone and install this package, you'll need PIP installed on your computer. From your command line:
 ```shell
+# Update pip
 pip install --upgrade pip
+
+# Install the latest master of vichShir
 pip install git+https://github.com/vichShir/datascience-utils-python.git
 ```
 
@@ -27,3 +46,18 @@ extractor = NameExtractor()
 persons = extractor.extract_names(txt_person)
 persons
 ```
+
+
+
+## Credits
+This software uses the following open source packages:
+- Pandas
+- Numpy
+- Scikit-learn
+- Transformers
+- Beautifulsoup
+
+
+
+## License
+Apache 2.0
