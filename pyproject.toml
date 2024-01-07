@@ -10,7 +10,7 @@ authors = [
 dependencies = [
     "pandas",
     "numpy",
-    "sklearn",
+    "scikit-learn",
     "transformers",
     "beautifulsoup4",
     "urllib3"
