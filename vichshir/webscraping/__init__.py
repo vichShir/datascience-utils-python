@@ -1,1 +1,1 @@
-from crawler import scrap
+from .crawler import scrap

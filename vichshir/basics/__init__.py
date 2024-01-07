@@ -1,1 +1,1 @@
-from iterables import pairwise
+from .iterables import pairwise
