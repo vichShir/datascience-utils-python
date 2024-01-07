@@ -2,7 +2,7 @@ import os
 import requests
 
 
-def download(url: str, filename: str, dest_folder: str = './'):
+def download_file_from_url(url: str, filename: str, dest_folder: str = './'):
     """
     Credits to: Ivan Vinogradov
     From: https://stackoverflow.com/questions/56950987/download-file-from-url-and-save-it-in-a-folder-python
